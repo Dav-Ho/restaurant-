@@ -1,0 +1,17 @@
+
+
+<% Section.all.each do |section| %>
+  <div class="btn-group btn-group-lg" role="group" aria-label="Example">
+    <%= link_to section, menu_path(section: section), class: 'btn btn-default' %>
+  </div>
+<% end %>
+
+<center><h1>Menu</h1></center>
+
+<% @food_items.each do |food_item| %>
+  <div class= "card">
+    <div class= "card-header">
+      <h3> <%= food_item.name %> </h3>
+    </div>
+  </div>
+<% end %>
